@@ -60,9 +60,9 @@ Numerical Features:
 ### 3. Feature Engineering
 - Extracted year from invoice_date
 - Created season by mapping months:
-    Spring: January, February, March, April
-    Summer: May, June, July, August
-    Fall: September, October, November, December
+    - Spring: January, February, March, April
+    - Summer: May, June, July, August
+    - Fall: September, October, November, December
 
 ### 4. Model Development Workflow
 #### Data Preparation:
