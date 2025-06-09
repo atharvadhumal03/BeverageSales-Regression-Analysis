@@ -132,21 +132,21 @@ With an R-squared of 0.852 and all predictors showing p-values < 0.01, the model
 The dataset contains transactional beverage sales data from major US retailers, capturing detailed information about pricing, volume, profitability, and operational metrics across different regions and time periods.
 
 ### Dataset Characteristics
-Total Records: 9648 transactions
-Time Period: 2022-2023 (2 years)
-Geographic Coverage: 5 US regions (Northeast, South, Southeast, West, Midwest)
-Data Quality: Complete dataset with no missing values or duplicates
+- **Total Records:** 9648 transactions
+- **Time Period:** 2022-2023 (2 years)
+- **Geographic Coverage:** 5 US regions (Northeast, South, Southeast, West, Midwest)
+- **Data Quality**: Complete dataset with no missing values or duplicates
 
 ### Features Description
-Numerical Variables (5):
-price_per_unit: Unit selling price of beverage products
-units_sold: Quantity sold per transaction
-total_sales: Total revenue per transaction (price × units)
-operating_profit: Target variable - profit generated per transaction
-operating_margin: Profit margin percentage (initially included, later excluded due to low correlation)
+#### Numerical Variables (5):
+1. **price_per_unit:** Unit selling price of beverage products
+2. **units_sold:** Quantity sold per transaction
+3. **total_sales:** Total revenue per transaction (price × units)
+4. **operating_profit:** Target variable - profit generated per transaction
+5. **operating_margin:** Profit margin percentage (initially included, later excluded due to low correlation)
 
-### Categorical Variables (4)
-retailer (6 categories): Amazon, BevCo, FizzyCo, Target, Walmart, West Soda
-region (5 categories): Northeast, South, Southeast, West, Midwest
-beverage_brand (7 categories): Coca-Cola, 7UP, Dasani Water, Diet Coke, Fanta, Powerade, Sprite
-invoice_date: Transaction date (later engineered into year and season)
+#### Categorical Variables (4)
+1. **retailer (6 categories):** Amazon, BevCo, FizzyCo, Target, Walmart, West Soda
+2. **region (5 categories):** Northeast, South, Southeast, West, Midwest
+3. **beverage_brand (7 categories):** Coca-Cola, 7UP, Dasani Water, Diet Coke, Fanta, Powerade, Sprite
+4. **invoice_date:** Transaction date (later engineered into year and season)
