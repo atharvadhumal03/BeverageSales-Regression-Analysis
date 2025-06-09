@@ -104,3 +104,49 @@ Model Statistics:
 1. R-squared: 0.851
 2. Reduced to 13 significant predictors only
 3. Improved model interpretability without sacrificing predictive power
+
+## 🔑 Key Findings
+**1. Sales Volume is the Primary Profit Driver**
+Units sold demonstrates the strongest relationship with operating profit (coefficient: 430.80), indicating that each additional unit sold contributes $430.80 to profit. This effect is nearly double that of pricing, suggesting volume-based strategies offer the greatest profit potential.
+
+**2. Pricing Shows Significant but Secondary Impact**
+While price per unit positively impacts profit (+$215.41 per dollar increase), its effect is roughly half that of volume. This suggests aggressive pricing strategies should be balanced against potential volume impacts.
+
+**3. Stark Performance Disparities Across Retailers**
+Walmart significantly underperforms the Amazon baseline by $49.94 per transaction, while specialty beverage retailers (FizzyCo +$19.51, West Soda +$18.48) show superior profitability. This 3x profit gap between best and worst performers indicates substantial opportunity for channel optimization.
+
+**4. Regional Markets Show 2.5x Profit Variance**
+The South region outperforms by $61.58 per transaction while the West underperforms by $64.38, creating a $126 profit differential between regions. The Northeast also lags (-$27.82), suggesting geographic expansion should prioritize Southern markets.
+
+**5. Coca-Cola Dominates the Brand Portfolio**
+All alternative beverages show negative coefficients compared to Coca-Cola, with Diet Coke (-$82.87) and Powerade (-$74.26) showing the steepest profit penalties. Even the best-performing alternative (Dasani Water at -$24.26) generates significantly less profit than Coca-Cola.
+
+**6. Modest Year-over-Year Growth**
+The $17.28 profit increase from 2022 to 2023 represents only 4.5% growth relative to the base profit of $381.63, suggesting market maturity or need for operational improvements.
+
+**7. Model Demonstrates Strong Predictive Power**
+With an R-squared of 0.852 and all predictors showing p-values < 0.01, the model reliably captures profit drivers while maintaining parsimony after removing non-significant variables.
+
+## 📁 Dataset Information
+### Overview
+The dataset contains transactional beverage sales data from major US retailers, capturing detailed information about pricing, volume, profitability, and operational metrics across different regions and time periods.
+
+### Dataset Characteristics
+Total Records: 9648 transactions
+Time Period: 2022-2023 (2 years)
+Geographic Coverage: 5 US regions (Northeast, South, Southeast, West, Midwest)
+Data Quality: Complete dataset with no missing values or duplicates
+
+### Features Description
+Numerical Variables (5):
+price_per_unit: Unit selling price of beverage products
+units_sold: Quantity sold per transaction
+total_sales: Total revenue per transaction (price × units)
+operating_profit: Target variable - profit generated per transaction
+operating_margin: Profit margin percentage (initially included, later excluded due to low correlation)
+
+### Categorical Variables (4)
+retailer (6 categories): Amazon, BevCo, FizzyCo, Target, Walmart, West Soda
+region (5 categories): Northeast, South, Southeast, West, Midwest
+beverage_brand (7 categories): Coca-Cola, 7UP, Dasani Water, Diet Coke, Fanta, Powerade, Sprite
+invoice_date: Transaction date (later engineered into year and season)
